@@ -1,0 +1,167 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #a8dadc;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #1d3557;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* Profile Section */
+.profile, .about, .contact {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 12px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile p, .about p, .contact p {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Container Form */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 30px 20px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #457b9d;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.95em;
+    color: #495057;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+    background-color: #f8f9fa;
+}
+
+input:focus {
+    border-color: #74c69d;
+    outline: none;
+}
+
+/* Button */
+button {
+    background-color: #74c69d;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #52b788;
+}
+
+/* Footer */
+footer {
+    background-color: #a8dadc;
+    width: 100%;
+    text-align: center;
+    color: #1d3557;
+    padding: 15px 0;
+    font-size: 0.9em;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container, .profile, .about, .contact {
+        padding: 30px 20px;
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        justify-content: center;
+    }
+
+    .container, .profile, .about, .contact {
+        padding: 25px 15px;
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
